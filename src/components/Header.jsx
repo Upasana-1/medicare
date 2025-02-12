@@ -9,7 +9,7 @@ const Header = () => {
       <div className="md:w-1/2 flex flex-col gap-6">
         <h1 className="text-3xl md:text-5xl font-bold leading-tight">
           Book Your Appointment <br />
-          with Trusted Doctors of <br />
+          with Trusted <br /> Doctors of  <br /> 
           <span className="text-yellow-300">Dhulikhel Hospital</span>
         </h1>
 

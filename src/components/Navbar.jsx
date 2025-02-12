@@ -18,7 +18,7 @@ const Navbar = () => {
           <hr className='h-0.5 bg-[#5f6FFF] w-3/5 m-auto hidden group-hover:block' />
         </li>
         <li className='py-1 group'>
-          <NavLink to='/doctors' className="hover:text-blue-500">Doctors</NavLink>
+          <NavLink to='/Doctors' className="hover:text-blue-500">Doctors</NavLink>
           <hr className='h-0.5 bg-[#5f6FFF] w-3/5 m-auto hidden group-hover:block' />
         </li>
         <li className='py-1 group'>

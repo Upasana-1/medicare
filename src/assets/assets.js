@@ -63,7 +63,7 @@ export const assets = {
 
 export const specialityData = [
     {
-        speciality: 'General physician',
+        speciality: 'Physician',
         image: General_physician
     },
     {
@@ -74,6 +74,7 @@ export const specialityData = [
         speciality: 'Dermatologist',
         image: Dermatologist
     },
+    
     {
         speciality: 'Pediatricians',
         image: Pediatricians
@@ -90,14 +91,15 @@ export const specialityData = [
 
 export const doctors = [
     {
-        _id: 'ortho1',
+        _id: 'doc1',
         name: 'Dr. Dashrath Kafle',
         image: ortho1,
-        speciality: 'Orthodontic Suregon',
+        speciality: 'Orthodontic',
         degree: 'MBBS',
         experience: '4 Years',
         about: 'Dr. Dashrath Kafle has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         fees: 50,
+        availability: "10 AM - 5 PM",
         available: true,
         address: {
             line1: '17th Cross, Richmond',
@@ -114,13 +116,15 @@ export const doctors = [
         about: 'Dr. Abha Shrestha has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         fees: 60,
         available: true,
+        availability: "10 AM - 5 PM",
+        availability: "",
         address: {
             line1: '27th Cross, Richmond',
             line2: 'Circle, Ring Road, London'
         }
     },
     {
-        _id: 'ortho1',
+        _id: 'doc3',
         name: 'Dr. Elisha Shrestha ',
         image: dermatologist1,
         speciality: 'Dermatologist',
@@ -128,19 +132,21 @@ export const doctors = [
         experience: '5 Years',
         about: 'Dr.Elisha Shrestha  has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         fees: 40,
+        availability: "10 AM - 5 PM",
         address: {
             line1: '47th Cross, Richmond',
             line2: 'Circle, Ring Road, London'
         }},
     {
-        _id: 'doc3',
+        _id: 'doc4',
         name: 'Dr. Monika Pokharel',
         image: ent1,
-        speciality: 'ENT Surgeon',
+        speciality: 'ENT',
         degree: 'MBBS',
         experience: '1 Years',
         about: 'Dr. Monika Pokharel has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         fees: 30,
+        availability: "10 AM - 5 PM",
         available: true,
         address: {
             line1: '37th Cross, Richmond',
@@ -171,6 +177,7 @@ export const doctors = [
         experience: '4 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         fees: 50,
+        availability: "10 AM - 5 PM",
         available: true,
         address: {
             line1: '57th Cross, Richmond',
@@ -195,11 +202,12 @@ export const doctors = [
         _id: 'doc7',
         name: 'Dr. Dilip Prajapati',
         image: dentistry1,
-        speciality: 'Community Dentistry',
+        speciality: 'Pediatricians',
         degree: 'MBBS',
         experience: '4 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         fees: 50,
+        availability: "10 AM - 5 PM",
         address: {
             line1: '17th Cross, Richmond',
             line2: 'Circle, Ring Road, London'
@@ -214,6 +222,7 @@ export const doctors = [
         experience: '3 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         fees: 60,
+        availability: "10 AM - 5 PM",
         address: {
             line1: '27th Cross, Richmond',
             line2: 'Circle, Ring Road, London'
@@ -229,6 +238,7 @@ export const doctors = [
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         fees: 30,
         available: true,
+        availability: "10 AM - 5 PM",
         address: {
             line1: '37th Cross, Richmond',
             line2: 'Circle, Ring Road, London'
@@ -243,6 +253,7 @@ export const doctors = [
         experience: '1 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         fees: 30,
+         availability: "10 AM - 5 PM",
         address: {
             line1: '37th Cross, Richmond',
             line2: 'Circle, Ring Road, London'
@@ -257,6 +268,7 @@ export const doctors = [
         experience: '2 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
         fees: 40,
+        availability: "10 AM - 5 PM",
         address: {
             line1: '47th Cross, Richmond',
             line2: 'Circle, Ring Road, London'
@@ -326,6 +338,7 @@ export const doctors = [
         degree: 'MBBS',
         experience: '1 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        availability: "10 AM - 5 PM",
         fees: 30,
         address: {
             line1: '37th Cross, Richmond',

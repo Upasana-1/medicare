@@ -1,6 +1,8 @@
 import React, { useContext, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
+import Appointment from './Appointment';
+import EditDoctor from './EditDoctor';
 
 const Doctors = () => {
   const { speciality } = useParams(); // Get the selected speciality from the URL
@@ -22,7 +24,7 @@ const Doctors = () => {
 
       {/* Doctor Speciality Buttons */}
       <div className="flex flex-wrap justify-center gap-4 mt-5">
-        {["All", " Physician", "Gynecologist", "Dermatologist", "Pediatricians", "Neurologist", "ENT"].map((category) => (
+        {["All", "Physician", "Gynecologist", "Dermatologist","Biochemist" ,"Pediatricians", "Neurologist", "ENT"].map((category) => (
           <button
             key={category}
             onClick={() => {
@@ -51,7 +53,21 @@ const Doctors = () => {
                 <div className="p-4 text-center">
                   <p className="font-bold">{doctor.name}</p>
                   <p className="text-sm text-gray-500">{doctor.speciality}</p>
-                </div>
+                  <p
+                  className={`text-sm font-medium mt-2 ${
+                    doctor.availability ? "text-green-600" : "text-red-600"
+                  }`}
+                >
+                  🕒 {doctor.availability ? `Available: ${doctor.availability}` : "Not Available"}
+                  
+                </p>
+                <button 
+  onClick={() => navigate(`/Appointment/${doctor._id}`)}
+  className="mt-3 px-3 py-1 text-sm bg-blue-500 text-white rounded hover:bg-yellow-600"
+>
+  Book an Appointment
+</button>
+              </div>
               </div>
             ))
           ) : (
